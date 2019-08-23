@@ -1,0 +1,5 @@
+FROM nginx:latest
+LABEL maintainer 'Estudo: Rodrigo Luiz Soares'
+
+RUN echo '<h1>Teste Build !</h1>' > /usr/share/nginx/html/index.html
+COPY  *.html /usr/share/nginx/html/
