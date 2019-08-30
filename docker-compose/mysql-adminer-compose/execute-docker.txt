@@ -4,5 +4,8 @@ sudo docker-compose up -d
 #encerrando os containers
 sudo docker-compose down
 
+#acessando o banco
+
+
 
 
