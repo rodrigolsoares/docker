@@ -17,31 +17,31 @@ sudo docker exec -i -t hbase-master hbase shell
 create "table1", {NAME => "cf1"}, {NAME => "cf2"}
 
 ## Desabilitando uma tabela
-disable '<Nome da tabela>'
+disable 'Nome da tabela'
 
 ## Habilitando uma tabela
-enable '<Nome da tabela>'
+enable 'Nome da tabela'
 
 ## Drop table
-drop '<nome da tabela>'
+drop 'nome da tabela'
 
 ### Observação
 Para remover uma tabela é preciso desabilitar o objeto primeiro
 
 ## Descrição da table
-describe '<Nome da tabela>'
+describe 'Nome da tabela'
 
 ## Contando registros
 count 'Nome da tabela'
 
 ## Criando/Atualizando
-put '<Nome da tabela>', '<linha>', '<coluna>', '<valor>'
+put 'Nome da tabela', 'linha', 'coluna', 'valor'
 
 ## truncate table 
-truncate '<nome da tabela>'
+truncate 'nome da tabela'
 
 ## Visualizando registros
-scan '<Nome da tabela>', {RAW=>true,VERSIONS =>1000}
+scan 'Nome da tabela', {RAW=>true,VERSIONS =>1000}
 
 ### Referências
 * https://hub.docker.com/r/tobegit3hub/hbase-shell/
