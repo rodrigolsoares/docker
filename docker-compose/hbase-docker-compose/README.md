@@ -14,6 +14,14 @@ sudo docker exec -i -t hbase-master hbase shell
 * table help
 * list
 
+## Criando Namespace
+create_namespace 'nome do namespace'
+
+## Visualizando todos os namespace
+list_namespace
+
+## Removendo namespace
+drop_namespace 'nome do namespace'
 
 ## Criando tabela
 * create "table1", {NAME => "cf1"}, {NAME => "cf2"}
