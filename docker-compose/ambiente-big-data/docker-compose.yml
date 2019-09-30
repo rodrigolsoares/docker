@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  hadoop:
+    image: knappek/phoenix-secure
+    environment:
+      KRB_REALM: "teste.com.br"
+      DOMAIN_REALM: "teste.com.br"
+      KERBEROS_ADMIN: "admin/admin"
+      KERBEROS_ADMIN_PASSWORD: "admin"
+      KERBEROS_ROOT_USER_PASSWORD: "12345"

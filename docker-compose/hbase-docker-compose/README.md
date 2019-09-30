@@ -18,7 +18,7 @@ sudo docker exec -i -t hbase-master hbase shell
 create_namespace 'nome do namespace'
 
 ## Visualizando todos os namespace
-list_namespace
+list_namespacescan
 
 ## Removendo namespace
 drop_namespace 'nome do namespace'
@@ -28,7 +28,7 @@ drop_namespace 'nome do namespace'
 
 
 ## Desabilitando uma tabela
-* disable 'Nome da tabela'
+*disable 'Nome da tabela'
 
 
 ## Habilitando uma tabela
