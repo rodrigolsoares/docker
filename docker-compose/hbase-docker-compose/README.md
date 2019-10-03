@@ -23,7 +23,7 @@ list_namespacescan
 ## Removendo namespace
 drop_namespace 'nome do namespace'
 
-## Criando tabela
+## Criando Column Family
 * create "table1", {NAME => "cf1"}, {NAME => "cf2"}
 
 
