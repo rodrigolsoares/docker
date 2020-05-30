@@ -3,6 +3,7 @@
 
 ## Entrando no container do Hbase
 sudo docker exec -i -t hbase-master hbase shell
+sudo docker exec -i -t hbase_simple hbase shell
 
 
 ## Verificando o HBase
