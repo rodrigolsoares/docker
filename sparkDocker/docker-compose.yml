@@ -1,0 +1,17 @@
+version: '2.1'
+services:
+
+  namenode:
+    build: ./docker
+    restart: always
+    container_name: sparkWorker
+    ports:
+      - "32766:8082"
+      - "32765:7077"
+    healthcheck:
+      test: [ "CMD", "nc", "-z", "spark-master", "8082" ]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+
+ 
